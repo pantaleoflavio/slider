@@ -168,7 +168,7 @@ p {
   transform: translate(0%, -50%);
   position: absolute;
   transition: var(--transition);
-  opacity: 1;
+  opacity: 0;
 }
 
 .review {
