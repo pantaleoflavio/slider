@@ -24,6 +24,16 @@ const Slider = () => {
       return prevValue - 1
     })
   }
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      nextSlide();
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [active]);
+
   return (<div className="container slider">
     {recensioni.map( (recensione, index) => {
       let positionClass = "";

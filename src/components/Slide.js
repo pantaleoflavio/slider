@@ -1,8 +1,8 @@
 import React from "react";
-import starCreator from "../../utils/starCreator";
+import starCreator from "../utils/starCreator";
 
 const Slide = ({autore, recensione, voto, classes }) => {
-  const array = ['stella', 'stella', 'stella', 'stella', 'stella']
+  
   return <article className={`slide ${classes}`} >
     <div className="review">
       <h4>{autore}</h4>

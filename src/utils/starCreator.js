@@ -1,4 +1,4 @@
-import {BsStarFill, BsStarHalf, BsStar} from 'react-icons-bs'
+import {BsStarFill, BsStarHalf, BsStar} from 'react-icons/bs'
 
 const starCreator = (num) => {
     return Array.from({length: 5}, (_, index) => {
